@@ -1,6 +1,6 @@
 package com.romanovych;
 
-public class Hobby {
+public abstract class Hobby {
 
     private String name;
     private int hours;
@@ -34,10 +34,7 @@ public class Hobby {
                 '}';
     }
 
-    public String tellAboutHobby(){
-        return "My hobby is " + name + ". I spend " + hours +
-                " hours a week on the hobby.";
-    }
+    public abstract String tellAboutHobby();
 
     public String getName() {
         return name;
